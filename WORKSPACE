@@ -21,3 +21,7 @@ bazel_version(name = "bazel_version")
 register_toolchains(
     "//:diagnostics_reporter_toolchain"
 )
+
+
+load("@io_bazel_rules_scala//scala:scala.bzl", "scala_repositories")
+scala_repositories()
