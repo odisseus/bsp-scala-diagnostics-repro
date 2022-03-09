@@ -3,4 +3,7 @@ load("@io_bazel_rules_scala//scala:scala.bzl", "scala_library", "scala_binary", 
 scala_library(
     name = "lib",
     srcs = glob(["**/*.scala"]),
+    deps = [
+        "@maven//:com_lmax_disruptor",
+    ]
 )
