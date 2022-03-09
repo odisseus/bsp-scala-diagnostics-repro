@@ -31,7 +31,7 @@ http_archive(
 )
 
 load("@io_bazel_rules_scala//:scala_config.bzl", "scala_config")
-scala_config(scala_version = "2.12.7")
+scala_config(scala_version = "2.13.7")
 
 register_toolchains(
     "//:diagnostics_reporter_toolchain"
